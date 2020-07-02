@@ -7,3 +7,4 @@ scikit-learn
 scipy
 galileo-db
 mysql-connector-python==8.0.16
+python-dotenv
