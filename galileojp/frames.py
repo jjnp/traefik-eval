@@ -30,7 +30,6 @@ class ExperimentFrameGateway:
         idlist = to_idlist(exp_ids)
 
         df = pd.read_sql(f'SELECT * FROM nodeinfo WHERE exp_id in ({idlist})', con=self._con)
-        df.index = pd.DatetimeIndex(pd.to_datetime(df['TIMESTAMP'], unit='s'))
         return df
 
     def events(self, *exp_ids):
