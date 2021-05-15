@@ -8,7 +8,12 @@ While most of this code and all the data is under the CC-BY license, please be a
 
 The experiments have been performed with the help of the [Galileo Framework](https://github.com/edgerun/galileo) for distributed load testing.
 
-Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+## Versions
+Versions can be found via the releases or via the corresponding Zenodo/DOI links
+### Version 1
+[![DOI](https://zenodo.org/badge/367639043.svg)](https://zenodo.org/badge/latestdoi/367639043)
+
+[![CC BY 4.0][cc-by-shield]][cc-by]
 
 This work is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
