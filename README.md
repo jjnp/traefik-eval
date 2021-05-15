@@ -1,32 +1,9 @@
-galileo-jupyter
-===============
+# Traefik Evaluation
+This is the documentation repository for the evaluations of the adaptation of traefik found [here](https://github.com/jjnp/traefik)
 
-Tools for analyzing galileo experiments.
+It contains all the data obtained from experiments and the subsequent code for analyses and visualizations.
 
-Configuration
--------------
+While most of this code and all the data is under the CC-BY license, please be advised that it is based on code by [Thomas Rausch](https://github.com/thrau)https://github.com/edgerun/galileo found
+[here](https://github.com/edgerun/galileo-jupyter) (with permission of course) and unmodified portions are thus subject to whatever license that code is under.
 
-Create a `$HOME/.galileojp` and fill with environment variables that configure the database access to galileo-db.
-For example:
-
-```
-galileo_expdb_driver=mysql
-
-galileo_expdb_mysql_host=localhost
-galileo_expdb_mysql_port=3307
-galileo_expdb_mysql_db=galileo
-galileo_expdb_mysql_user=galileo
-galileo_expdb_mysql_password=mypassword
-```
-
-Usage
------
-
-Then you can run
-
-```python
-from galileojp.frames import ExperimentFrameGateway
-
-efg = ExperimentFrameGateway.from_env()
-efg.telemetry('my-exp-id') # returns a dataframe containing the telemetry for the given experiment
-```
+The experiments have been performed with the help of the [Galileo Framework](https://github.com/edgerun/galileo) for distributed load testing.
